@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.bg-body {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:link,
+a:visited a:active {
+  text-decoration: none;
+}
+.lt-login .panel {
+  margin-top: 300px;
+}
+.lt-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  transition: all 1s;
+}
+.lt-aside.now {
+  left: -180px;
+}
+.lt-aside > a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #367FA9;
+}
+.lt-aside > .avatar {
+  margin-top: 30px;
+  text-align: center;
+}
+.lt-aside > .avatar > img {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.lt-aside > .avatar > p {
+  color: #fff;
+  font-size: 16px;
+}
+.lt-aside > .module {
+  margin-top: 46px;
+}
+.lt-aside > .module a > span.glyphicon {
+  margin-right: 4px;
+}
+.lt-aside > .module a {
+  border: 3px solid transparent;
+  display: block;
+  padding-left: 30px;
+  line-height: 3;
+  color: #ccc;
+}
+.lt-aside > .module a.active {
+  border-left-color: #006699;
+}
+.lt-aside > .module .child > a {
+  padding-left: 60px;
+}
+.lt-main {
+  width: 100%;
+  padding-left: 180px;
+  transition: all 1s;
+}
+.lt-main.now {
+  padding-left: 0;
+}
+.lt-main > .topbar {
+  height: 50px;
+  background-color: #3C8DBC;
+  padding: 0 15px;
+  line-height: 50px;
+  color: #fff;
+}
+.lt-main > .topbar > a {
+  color: #fff;
+  font-size: 18px;
+}
+.lt-main > .container-fluid {
+  margin-top: 10px;
+}

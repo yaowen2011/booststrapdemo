@@ -16,6 +16,7 @@ $(document).ajaxStop(function () {
   setTimeout(function () {
     NProgress.done();
   }, 500);
+
 });
 
 
@@ -34,10 +35,9 @@ if(location.href.indexOf("login.html") == -1){
 }
 
 
-
 //二级分类显示隐藏功能
 $(".child").prev().on("click", function () {
-  $(this).next().slideToggle();
+  $(this).next().toggle();
 });
 
 //侧边栏显示隐藏功能

@@ -2,9 +2,60 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>系统管理-登录</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
-<body>
-
+<body class="bg-body">
+    <!--pc不考虑响应式-->
+    <!--登录模块-->
+    <div class="lt-login">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4 ">
+            <div class="panel panel-primary ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">后台管理系统</h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-3 control-label">密码</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <input type="reset" class="btn btn-default pull-left" value="重置">
+                                <button type="submit" class="btn btn-primary pull-right">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--面板组件-->
+        <!--表单主键 （全局css）-->
+            <!--注意form-group的使用-->
+        <!--校验插件bootstrap-valitor-->
+        <!--事件名称 success.form.bv-->
+    </div>
+    </div>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script src="lib/nprogress/nprogress.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

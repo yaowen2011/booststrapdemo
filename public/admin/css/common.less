@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.bg-body {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a, a:link, a:visited a:active{
+    text-decoration: none;
+}
+
+//登录模块
+.lt-login {
+    .panel {
+        margin-top: 300px;
+    }
+}
+
+//左侧栏目
+.lt-aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    transition: all 1s;
+
+    &.now {
+        left: -180px;
+    }
+
+    > a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 24px;
+        color: #fff;
+        background-color: #367FA9;
+
+    }
+
+    > .avatar {
+        margin-top: 30px;
+        text-align: center;
+
+        > img {
+            width: 82px;
+            height: 82px;
+            margin-bottom: 6px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        > p {
+            color: #fff;
+            font-size: 16px;
+        }
+
+    }
+
+    > .module {
+        margin-top: 46px;
+        a > span.glyphicon {
+            margin-right: 4px;
+        }
+        a {
+            border: 3px solid transparent;
+
+            display: block;
+            padding-left: 30px;
+            line-height: 3;
+            color: #ccc;
+        }
+
+        a.active {
+            border-left-color: #006699;
+        }
+
+        .child {
+            > a {
+                padding-left: 60px;
+            }
+        }
+    }
+}
+
+//右侧
+.lt-main {
+    width: 100%;
+    padding-left: 180px;
+    transition: all 1s;
+
+    &.now {
+        padding-left: 0;
+    }
+
+    > .topbar {
+        height: 50px;
+        background-color: #3C8DBC;
+        padding: 0 15px;
+        line-height: 50px;
+        color: #fff;
+        > a {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    > .container-fluid {
+        margin-top: 10px;
+    }
+}
